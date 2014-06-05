@@ -1,5 +1,5 @@
 <div class="container container-top">
-	<% if @marketplace %>
+	<% if !(@marketplace.blank?) %>
 	<h4><i>Last Updated on <%= @marketplace.creationtime.to_formatted_s %></i></h4>
 	<table class="table table-bordered table-hover"> 
 		<thead>
