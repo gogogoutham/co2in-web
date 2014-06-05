@@ -1,0 +1,19 @@
+<div class="container container-top">
+	<table class="table table-bordered table-hover"> 
+		<thead>
+			<th>Name</th>
+			<th>Description</th>
+			<th colspan="1"></th>
+		</thead>
+		<tbody>
+			<% @snacks.each do |snack| %>
+			<tr>
+				<td><%= snack.name%></td>
+				<td><%= snack.description%></td>
+				<td><%= link_to 'Edit', edit_marketplace_admin_snack_path(snack) %> | <%= link_to 'Delete', marketplace_admin_snack_path(snack), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<%= link_to 'Add Snack', new_marketplace_admin_snack_path, class: "btn" %> | <%= link_to 'Back to Admin', marketplace_admin_path, class: "btn" %>
+</div>

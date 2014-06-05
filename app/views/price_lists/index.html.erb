@@ -1,0 +1,22 @@
+<div class="container container-top">
+	<table class="table table-bordered table-hover"> 
+		<thead>
+			<th>Time Created</th>
+			<th># of Items</th>
+			<th>Basket Price</th>
+			<th colspan="1"></th>
+		</thead>
+		<tbody>
+			<% @price_lists.each do |price_list| %>
+			<tr>
+				<td><%= price_list.creationtime.to_formatted_s %></td>
+				<td><%= price_list.snack_quotes.length %></td>
+				<td>TBD</td>
+				<td><%= link_to 'Show', marketplace_admin_price_list_path(price_list) %> |
+				<%= link_to 'Delete', marketplace_admin_price_list_path(price_list), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<%= link_to 'Add Price List', new_marketplace_admin_price_list_path, class: "btn" %> | <%= link_to 'Back to Admin', marketplace_admin_path, class: "btn" %>
+</div>

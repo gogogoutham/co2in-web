@@ -1,0 +1,18 @@
+<div class="container container-top">
+	<table class="table table-bordered table-hover"> 
+		<thead>
+			<th>Action Name</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td> <%= link_to 'Manage Price Lists', marketplace_admin_price_lists_path, class: "btn" %> </td>
+				<td> Update the current price list and view historical ones </td>
+			<tr>
+				<td> <%= link_to 'Manage Snacks', marketplace_admin_snacks_path, class: "btn" %> </td>
+				<td> Manage the inventory of snacks </td>
+			</tr>
+		</tbody>
+	</table>
+	<%= link_to 'Back to Marketplace', marketplace_path, class: "btn" %>
+</div>
