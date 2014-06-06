@@ -3,7 +3,7 @@ class PriceListsController < AdminController
 		@price_list = PriceList.new_from_raw_params(price_list_params)
 		
 		if @price_list.save
-			redirect_to @price_list
+			redirect_to marketplace_admin_price_list_url(@price_list)
 		else 
 			render 'new'
 		end
@@ -36,7 +36,7 @@ class PriceListsController < AdminController
 		@price_list = PriceList.find(params[:id])
 
 		if @price_list.update(snack_params)
-			redirect_to @price_list
+			redirect_to marketplace_admin_price_list_url(@price_list)
 		else
 			render 'edit'
 		end

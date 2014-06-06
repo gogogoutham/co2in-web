@@ -3,7 +3,7 @@ class SnacksController < AdminController
 		@snack = Snack.new(snack_params)
 
 		if @snack.save
-			redirect_to @snack
+			redirect_to marketplace_admin_snacks_path
 		else 
 			render 'new'
 		end
@@ -36,7 +36,7 @@ class SnacksController < AdminController
 		@snack = Snack.find(params[:id])
 
 		if @snack.update(snack_params)
-			redirect_to @snack
+			redirect_to marketplace_admin_snacks_path
 		else
 			render 'edit'
 		end
