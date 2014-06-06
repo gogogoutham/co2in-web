@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   get 'download/osx' => 'home#download_osx'
 
+  get 'download/cnf' => 'home#download_cnf'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

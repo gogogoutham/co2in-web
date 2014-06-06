@@ -30,3 +30,4 @@
 # Ignore public binaries.
 /public/CO2IN-Qt.dmg
 /public/co2in-0.8.7.1-win32-setup.exe
+/public/co2in.conf

@@ -11,10 +11,11 @@
                 <p>&nbsp</p>
                 <h4> START USING CO<sub>2</sub>IN: </h4> 
                 <p>
-                    <%= link_to '<span class="fa fa-windows"></span> Windows '.html_safe, download_win_url, class: "btn btn-primary btn-lg", role: "button" %>
-                    <%= link_to '<span class="fa fa-apple"></span> OS X '.html_safe, download_osx_url, class: "btn btn-primary btn-lg", role: "button" %>
+                    <%= link_to '<span class="fa fa-windows"></span> Windows '.html_safe, {:action => "show", :controller => "faq", :anchor => "getting-started" }, class: "btn btn-primary btn-lg", role: "button" %>
+                    <%= link_to '<span class="fa fa-apple"></span> OS X '.html_safe, {:action => "show", :controller => "faq", :anchor => "getting-started" }, class: "btn btn-primary btn-lg", role: "button" %>
                     <a href="#" class="btn btn-primary btn-lg" role="button" disabled="disabled"><span class="fa fa-linux"></span> Linux </a>
                 </p>
+                <!-- <p><%= link_to "Detailed Installation Instructions" , {:action => "show", :controller => "faq", :anchor => "getting-started" }, style: "color: #FFFFFF" %></p> -->
                 <p>&nbsp</p>
                 <h4> BUY CO<sub>2</sub>IN:  </h4> 
                 <p><a href="#" class="btn btn-primary btn-lg" role="button" disabled="disabled">Coming Soon</a></p>
@@ -34,7 +35,8 @@
     <div class="row">
         <div class="col-md-4">
             <h3>Reduce Emissions</h3>
-            <p>CO<sub>2</sub>IN is the only altcoin that sets aside pre-mined funds (20%) exclusively for purchase of carbon offsets. Funds will be disbursed to Terrapass in equal increments over 10 months starting on July 1st, 2014. </p>
+            <p>CO<sub>2</sub>IN is the only altcoin that sets aside pre-mined funds (20%) exclusively for purchase of carbon offsets. Funds will be transferred to reputable carbon offset vendors over the course of ~1 year once the coin exits the BETA stage. </p>
+            <!-- <p>CO<sub>2</sub>IN is the only altcoin that sets aside pre-mined funds (20%) exclusively for purchase of carbon offsets. Funds will be disbursed to Terrapass in equal increments over 10 months starting on July 1st, 2014. </p> -->
         </div>
         <div class="col-md-4">
             <h3>Mine with Confidence</h3>
@@ -42,7 +44,8 @@
         </div>
         <div class="col-md-4">
             <h3>Support Research</h3>
-            <p>CO<sub>2</sub>IN is the collaborative output of researchers at Rice University's Cultural Observatory. Participation in the CO<sub>2</sub>IN environment will support ongoing research on the adoption, spending characteristics, and mining of nascent digital currencies. </p>
+            <p>CO<sub>2</sub>IN is the output of researchers at the Aiden Lab of the Baylor College of Medicine and Rice University. Participation in the CO<sub>2</sub>IN environment will support ongoing research on the adoption, spending characteristics, and mining of nascent digital currencies. </p>
+            <!-- <p>CO<sub>2</sub>IN is the output of researchers at Rice University's Cultural Observatory. Participation in the CO<sub>2</sub>IN environment will support ongoing research on the adoption, spending characteristics, and mining of nascent digital currencies. </p> -->
         </div>
     </div>
 </div>

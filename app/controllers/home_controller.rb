@@ -10,6 +10,12 @@ class HomeController < ApplicationController
 			:type=>"application/dmg", 
 			:x_sendfile=>true
 	end
+
+	def download_cnf
+		send_file 'public/co2in.conf',
+			:type=>"application/conf", 
+			:x_sendfile=>true
+	end
 	
 	def show
 	end
