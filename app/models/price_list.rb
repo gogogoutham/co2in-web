@@ -11,7 +11,7 @@ class PriceList < ActiveRecord::Base
 		price_list = PriceList.new(creationtime: Time.now)
 
 		# Append on unfilled prices if template quote exits
-		if template_price_list != nil
+		if !(template_price_list.blank?)
 			previousSnacks = []
 			for sq in template_price_list.snack_quotes
 				price_list.snack_quotes.build(price: sq.price, snack: sq.snack)
