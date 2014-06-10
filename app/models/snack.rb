@@ -20,7 +20,7 @@ class Snack < ActiveRecord::Base
 	  			if snack.firstlisttime.nil? || sq.price_list.creationtime < snack.firstlisttime
 	  				snack.firstlisttime = sq.price_list.creationtime
 	  			end
-	  			if snack.lastlisttime.nil? || sq.price_list.creationtime < snack.lastlisttime
+	  			if snack.lastlisttime.nil? || sq.price_list.creationtime > snack.lastlisttime
 	  				snack.lastlisttime = sq.price_list.creationtime
 	  			end
 	  		end
