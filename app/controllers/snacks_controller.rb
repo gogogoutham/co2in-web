@@ -21,7 +21,7 @@ class SnacksController < AdminController
 	end
 
 	def index
-		@snacks = Snack.all.order(:name)
+		@snacks = Snack.alphabetical_with_balance
 	end
 
 	def new
