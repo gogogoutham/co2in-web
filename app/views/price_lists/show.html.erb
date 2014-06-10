@@ -4,13 +4,15 @@
 			<th>Snack Name</th>
 			<th>Price</th>
 			<th>Deposit Address</th>
+			<th>Quantity Purchased</th>
 		</thead>
 		<tbody>
-			<% @price_list.snack_quotes.alphabetical.each do |sq| %>
+			<% @price_list.snack_quotes.alphabetical_with_balance.each do |sq| %>
 			<tr>
 				<td><%= sq.snack.name %></td>
 				<td><%= sq.price %> CO2C</td>
 				<td><%= sq.deposit_address %></td>
+				<td><%= sq.quantity_purchased || "&mdash;".html_safe%></td>
 			</tr>
 			<% end %>
 		</tbody>

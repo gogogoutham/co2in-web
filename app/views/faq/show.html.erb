@@ -26,7 +26,7 @@
         <p> Start by downloading the official CO<sub>2</sub>IN client. Builds exist for <%= link_to 'Windows', download_win_url %> and <%= link_to 'OS X', download_osx_url %>. Afterwards, you will need to place the following <%= link_to 'configuration file', download_cnf_url %> in one of the following places: </p>
         <ul>
             <li> Windows: C:\Users\[username]\AppData\Roaming\CO2IN, substituting [username] for your username. </li>
-            <li> Mac OS X: /User/[username]/Library/Application Support/CO2IN/, substituting [username] for your username. </li>
+            <li> Mac OS X: /Users/[username]/Library/Application Support/CO2IN/, substituting [username] for your username. </li>
         </ul>
         <p> This file will ensure that you connect to valid nodes in the CO<sub>2</sub>IN network and activate mining (see next question) by default. To turn off default mining, just put a "#' character in front of the line that says "gen=1" in the configuration file. </p>
     </div>
@@ -79,6 +79,7 @@
         <li> 2.5 minute difficulty re-target (every block) </li>
         <li> 50 CO2C initial reward with half life of 840,000 blocks </li>
         <li> 2.5 minute target mine time </li>
+        <li> Address prefix is "C" (instead of "L") </li>
         </ul>
     </div>
     
