@@ -1,31 +1,31 @@
 <div class="container container-top">
-	<%= form_for @price_list, url: marketplace_admin_price_lists_path do |f| %>
-		<% if @price_list.errors.any? %>
-		<div id="error-explanation">
-			<h2> Could not save due to errors. Please review your entries. </h2>
-		</div>
-		<% end %>
+  <%= form_for @price_list, url: marketplace_admin_price_lists_path do |f| %>
+    <% if @price_list.errors.any? %>
+    <div id="error-explanation">
+      <h2> Could not save due to errors. Please review your entries. </h2>
+    </div>
+    <% end %>
 
-		<table class="table table-bordered table-hover"> 
-			<thead>
-				<th>Include?</th>
-				<th>Snack Name</th>
-				<th>Last Price</th>
-				<th>New Price</th>
-			</thead>
-			<tbody>
-				<%= f.fields_for :snack_quotes do |g| %>
-					<tr>
-						<td><%= g.check_box :include, :checked => (g.object.price ? true : false) %></td>
-						<td><%= g.object.snack.name %> <%= g.hidden_field :snack_id %> </td>
-						<td><%= g.object.price || "&mdash;".html_safe %> CO2C</td>
-						<td><%= g.text_field :price %> CO2C</td>
-					</tr>
-				<% end %>
-			</tbody>
-		</table>
+    <table class="table table-bordered table-hover"> 
+      <thead>
+        <th>Include?</th>
+        <th>Snack Name</th>
+        <th>Last Price</th>
+        <th>New Price</th>
+      </thead>
+      <tbody>
+        <%= f.fields_for :snack_quotes do |g| %>
+          <tr>
+            <td><%= g.check_box :include, :checked => (g.object.price ? true : false) %></td>
+            <td><%= g.object.snack.name %> <%= g.hidden_field :snack_id %> </td>
+            <td><%= g.object.price || "&mdash;".html_safe %> CO2C</td>
+            <td><%= g.text_field :price %> CO2C</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-		<%= f.submit :class => "btn btn-primary" %>
-	<% end %>
-	<%= link_to 'Back', marketplace_admin_price_lists_path, class: "btn" %>
+    <%= f.submit :class => "btn btn-primary" %>
+  <% end %>
+  <%= link_to 'Back', marketplace_admin_price_lists_path, class: "btn" %>
 </div>

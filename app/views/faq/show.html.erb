@@ -2,93 +2,71 @@
 </div>
 
 <div class="container">
-    
-    <!-- START General Questions Section -->
-    <h1 id="general" class="page-header">General</h1>
+  
+  <!-- START General Questions Section -->
+  <h1 id="general" class="page-header">General</h1>
 
-    <p class="faq-question"> CO2IN? How do I say that? <p>
-    <p class="faq-answer"> CO<sub>2</sub> Coin = see-oh-too-coin. </p>
+  <p class="faq-question"> CO2IN? How do I say that? <p>
+  <p class="faq-answer"> CO<sub>2</sub> Coin = see-oh-too-coin. </p>
 
-    <p class="faq-question"> Yet another cryptocurrency? Why should I care about CO<sub>2</sub>IN? </p>
-    <p class="faq-answer"> After the BETA stage, 20&#37; of all CO<sub>2</sub>IN in existence will be set aside solely for the purchase of <a href="http://en.wikipedia.org/wiki/Carbon_offset">carbon offsets</a>. As more people participate in the CO<sub>2</sub>IN ecosystem and the coin's value grows so too will the value of emissions offsets that can be purchased. </p> 
+  <p class="faq-question"> Yet another cryptocurrency? Why should I care about CO<sub>2</sub>IN? </p>
+  <p class="faq-answer"> After the BETA stage, 20&#37; of all CO<sub>2</sub>IN in existence will be set aside solely for the purchase of <a href="http://en.wikipedia.org/wiki/Carbon_offset">carbon offsets</a>. As more people participate in the CO<sub>2</sub>IN ecosystem and the coin's value grows so too will the value of emissions offsets that can be purchased. </p> 
 
-    <!-- <p class="faq-question"> I've heard a lot about failed cryptocurrencies recently. How is CO<sub>2</sub>IN different? </p>
-    <p class="faq-answer">[TBA]</p>
+  <p class="faq-question"> What does it mean for CO<sub>2</sub>IN in beta testing? </p>
+  <p class="faq-answer" id="getting-started"> This means that CO<sub>2</sub>IN is only being released to a limited set of people, that the kinks are still being worked out, and that CO<sub>2</sub>IN account balances may be reset to zero upon completion of the BETA. Use at your own risk.</p>
 
-    <p class="faq-question"> Wait a minute, isn't cryptocurrency mining an energy intensive process. How does that square with reducing emissions? </p>
-    <p class="faq-answer"> Good question. We;re waiting to find out.</p> -->
+  <p class="faq-question"> OK, I'm sold - I want to help reduce emissions. Or I want to play around with a new cryptocurrency. How the heck do I get started with this thing? </p>
+  <div class="faq-answer">
+    <p> Start by downloading the official CO<sub>2</sub>IN client. Builds exist for <%= link_to 'Windows', download_win_url %> and <%= link_to 'OS X', download_osx_url %>. Afterwards, you will need to place the following <%= link_to 'configuration file', download_cnf_url %> in one of the following places: </p>
+    <ul>
+      <li> Windows: C:\Users\[username]\AppData\Roaming\CO2IN, substituting [username] for your username. </li>
+      <li> Mac OS X: /Users/[username]/Library/Application Support/CO2IN/, substituting [username] for your username. </li>
+    </ul>
+    <p> This file will ensure that you connect to valid nodes in the CO<sub>2</sub>IN network and activate mining (see next question) by default. To turn off default mining, just put a "#' character in front of the line that says "gen=1" in the configuration file. </p>
+  </div>
 
-    <p class="faq-question"> What does it mean for CO<sub>2</sub>IN in beta testing? </p>
-    <p class="faq-answer" id="getting-started"> This means that CO<sub>2</sub>IN is only being released to a limited set of people, that the kinks are still being worked out, and that CO<sub>2</sub>IN account balances may be reset to zero upon completion of the BETA. Use at your own risk.</p>
+  <p class="faq-question"> How do I obtain CO<sub>2</sub>IN? </p>
+  <div class="faq-answer"> 
+    <p> A computationally-intensive process called mining, which makes CO<sub>2</sub>IN's record of transactions difficult to forge, is rewarded through CO<sub>2</sub>IN. The current reward size is 50 CO2C. To get started with mining simply follow the instructions in the above question. After doing this, you should periodically receive mining rewards when your CO<sub>2</sub>IN is running.</p>
+    <p> If you don't want to mine, or are simply eager to get started, simply send an e-mail to the creator with your CO<sub>2</sub>IN address, and he'll send you some (If you're reading this, you probably know who the Creator is). </p>
+  </div>
+  <!-- END General Questions Section -->
 
-    <p class="faq-question"> OK, I'm sold - I want to help reduce emissions. Or I want to play around with a new cryptocurrency. How the heck do I get started with this thing? </p>
-    <div class="faq-answer">
-        <p> Start by downloading the official CO<sub>2</sub>IN client. Builds exist for <%= link_to 'Windows', download_win_url %> and <%= link_to 'OS X', download_osx_url %>. Afterwards, you will need to place the following <%= link_to 'configuration file', download_cnf_url %> in one of the following places: </p>
-        <ul>
-            <li> Windows: C:\Users\[username]\AppData\Roaming\CO2IN, substituting [username] for your username. </li>
-            <li> Mac OS X: /Users/[username]/Library/Application Support/CO2IN/, substituting [username] for your username. </li>
-        </ul>
-        <p> This file will ensure that you connect to valid nodes in the CO<sub>2</sub>IN network and activate mining (see next question) by default. To turn off default mining, just put a "#' character in front of the line that says "gen=1" in the configuration file. </p>
-    </div>
+  <!-- START Marketplace Section -->
+  <h1 id="implementation" class="page-header">Marketplace</h1>
 
-    <p class="faq-question"> How do I obtain CO<sub>2</sub>IN? </p>
-    <div class="faq-answer"> 
-        <p> A computationally-intensive process called mining, which makes CO<sub>2</sub>IN's record of transactions difficult to forge, is rewarded through CO<sub>2</sub>IN. The current reward size is 50 CO2C. To get started with mining simply follow the instructions in the above question. After doing this, you should periodically receive mining rewards when your CO<sub>2</sub>IN is running.</p>
-        <p> If you don't want to mine, or are simply eager to get started, simply send an e-mail to the creator with your CO<sub>2</sub>IN address, and he'll send you some (If you're reading this, you probably know who the Creator is). </p>
-    </div>
-    <!-- END General Questions Section -->
+  <p class="faq-question"> What is the Marketplace? </p>
+  <p class="faq-answer"> The Marketplace is an economic experiment targeted at the members of the Aiden Lab based out of the Baylor College of Medicine. Starting on Monday, June 9th, 2014, all snacks provided by the lab will be priced according to the <%= link_to 'Marketplace', marketplace_path %> posted on this website. In order to consume a snack, lab members will need to transfer the listed amount of CO<sub>2</sub>IN to its corresponding deposit address.  </p>
 
-    <!-- START Marketplace Section -->
-    <h1 id="implementation" class="page-header">Marketplace</h1>
+  <p class="faq-question"> That's kind of perverse. What's the point? </p>
+  <p class="faq-answer"> We're interesting in collecting on-the-ground data on how money (CO<sub>2</sub>IN) with a clear source of value (snacks) is used by a community of people. Start mining! Or contact the creator with your address to be sent some starter coin. </p>
 
-    <p class="faq-question"> What is the Marketplace? </p>
-    <p class="faq-answer"> The Marketplace is an economic experiment targeted at the members of the Aiden Lab based out of the Baylor College of Medicine. Starting on Monday, June 9th, 2014, all snacks provided by the lab will be priced according to the <%= link_to 'Marketplace', marketplace_path %> posted on this website. In order to consume a snack, lab members will need to transfer the listed amount of CO<sub>2</sub>IN to its corresponding deposit address.  </p>
+  <p class="faq-question"> Do prices change? If so, how often? According to what logic? </p>
+  <p class="faq-answer"> Yes. We are targeting daily price list changes. The marketplace operators receive 20&#37; of revenues generated on snack sales, so they are incentivized to price snacks in such a way that moves inventory quickly. In short, the prices of in demand snacks should trend higher than those of less popular snacks. </p>
 
-    <p class="faq-question"> That's kind of perverse. What's the point? </p>
-    <p class="faq-answer"> We're interesting in collecting on-the-ground data on how money (CO<sub>2</sub>IN) with a clear source of value (snacks) is used by a community of people. Start mining! Or contact the creator with your address to be sent some starter coin. </p>
+  <p class="faq-question"> Can I use the same deposit address over and over again for given snack? </p>
+  <p class="faq-answer"> No. Each time a snack's price changes, the snack's deposit address changes as well. This is for clear accounting of what price (and when) a given snack was purchased. </p>
 
-    <p class="faq-question"> Do prices change? If so, how often? According to what logic? </p>
-    <p class="faq-answer"> Yes. We are targeting daily price list changes. The marketplace operators receive 20&#37; of revenues generated on snack sales, so they are incentivized to price snacks in such a way that moves inventory quickly. In short, the prices of in demand snacks should trend higher than those of less popular snacks. </p>
+  <!-- END Marketplace Section -->
+  
+  <!-- START Implementation Questions Section -->
+  <h1 id="implementation" class="page-header">Technology & Implementation</h1>
 
-    <p class="faq-question"> Can I use the same deposit address over and over again for given snack? </p>
-    <p class="faq-answer"> No. Each time a snack's price changes, the snack's deposit address changes as well. This is for clear accounting of what price (and when) a given snack was purchased. </p>
-
-    <!-- END Marketplace Section -->
-
-    <!-- START Offset Purchase Questions Section -->
-    <!-- <h1 id="offset-purchase" class="page-header">Carbon Offset Purchase</h1>
-    
-    <p class="faq-question"> How can I confirm that the pre-mined fund amount is actually what you say it is? </p>
-    <p class="faq-answer"> [TBF] Ask your client to perform a balance check on the following addresses set-aside for the offset purchase, and confirm that the amounts match. These balances, like all other balances, are maintained by peers on the CO<sub>2</sub>IN network, not the developers. </p>
-    
-    <p class="faq-question">How do I know that you won't run away with the money and not spend it on offsets?</p>
-    <p class="faq-answer">[TBA]</p>
-    
-    <p class="faq-question"> Related to the previous question, how do I know that the offsets you purchase will actually succeed in reducing emissions?</p>
-    <p class="faq-answer"> [TBF] XXXXX is a reputable offset purchasing business. While the specific choice of offset behavior is up to the vendor, we are confident that the funds will be well spent.</p> -->
-    <!-- END Offset Purchase Questions Section -->
-    
-    <!-- START Implementation Questions Section -->
-    <h1 id="implementation" class="page-header">Technology & Implementation</h1>
-
-    <p class="faq-question"> What are the exact specifications for CO<sub>2</sub>IN? </p>
-    <div class="faq-answer"> CO2IN is a Litecoin branch with the following parameters:
-        <ul>
-        <li> Addition of DigiSign difficulty re-adjustment </li>
-        <li> Pre-mine of 20% of total currency to here </li>
-        <li> 2.5 minute difficulty re-target (every block) </li>
-        <li> 50 CO2C initial reward with half life of 840,000 blocks </li>
-        <li> 2.5 minute target mine time </li>
-        <li> Address prefix is "C" (instead of "L") </li>
-        </ul>
-    </div>
-    
-    <p class="faq-question"> You say it's a Litecoin branch, but what's the real the lineage of the CO<sub>2</sub>IN codebase? </p>
-    <p class="faq-answer"> CO<sub>2</sub>IN really is a branch of Litecoin! The most significant changes are a hard-coded pre-mine to certain addresses (see the FAQ section on carbon offset purchase) and the DigiSign difficulty re-adjustment algorithm spliced-in. We will periodically merge the latest updates to Litecoin as development resources allow.</p>
-
-    <!-- <p class="faq-question"> Why didn't you use Proof-of-Stake mining to avoid the energy impact of mining? Why didn't you try to create a community voting system for deciding how to spend the pre-mine on offsets? Why doesn't CO<sub>2</sub>IN incorporate cool features I've seen in other cryptocurrencies? </p>
-    <p class="faq-answer"> The sheer diversity of cryptocurrency implementations is amazing and a testament to the entrepreneurial spirit of the community. Proof-of-stake and voting-based spends are amazing ideas that we hope will be borne out some day, but for us they are too much of a risk. The reality is that the design of a distributed system as complex as a cryptocurrency is really, really difficult. We purposefully made CO<sub>2</sub>IN as small a branch of Litecoin as possible to avoid the introduction of bugs. </p> -->
-    
-    <!-- END Implementation Questions Section -->
+  <p class="faq-question"> What are the exact specifications for CO<sub>2</sub>IN? </p>
+  <div class="faq-answer"> CO2IN is a Litecoin branch with the following parameters:
+    <ul>
+    <li> Addition of DigiSign difficulty re-adjustment </li>
+    <li> Pre-mine of 20% of total currency to here </li>
+    <li> 2.5 minute difficulty re-target (every block) </li>
+    <li> 50 CO2C initial reward with half life of 840,000 blocks </li>
+    <li> 2.5 minute target mine time </li>
+    <li> Address prefix is "C" (instead of "L") </li>
+    </ul>
+  </div>
+  
+  <p class="faq-question"> You say it's a Litecoin branch, but what's the real the lineage of the CO<sub>2</sub>IN codebase? </p>
+  <p class="faq-answer"> CO<sub>2</sub>IN really is a branch of Litecoin! The most significant changes are a hard-coded pre-mine to certain addresses (see the FAQ section on carbon offset purchase) and the DigiSign difficulty re-adjustment algorithm spliced-in. We will periodically merge the latest updates to Litecoin as development resources allow.</p>
+  
+  <!-- END Implementation Questions Section -->
 
 </div>

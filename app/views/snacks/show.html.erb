@@ -1,13 +1,13 @@
 <div class="container container-top">
-	<p>
-		<strong>Name:</strong>
-		<%= @snack.name %>
-	</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @snack.name %>
+  </p>
 
-	<p>
-		<strong>Description:</strong>
-		<%= @snack.description %>
-	</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @snack.description %>
+  </p>
 
-	<%= link_to 'Back to Snacks', marketplace_admin_snacks_path, class: "btn" %> | <%= link_to 'Edit', edit_marketplace_admin_snack_path(@snack), class: "btn" %>
+  <%= link_to 'Back to Snacks', marketplace_admin_snacks_path, class: "btn" %> | <%= link_to 'Edit', edit_marketplace_admin_snack_path(@snack), class: "btn" %>
 </div>

@@ -1,27 +1,27 @@
 <div class="container container-top">
-	<table class="table table-bordered table-hover"> 
-		<thead>
-			<th>Name</th>
-			<th>Description</th>
-			<th>Quantity Purchased</th>
-			<th>Average Sale Price</th>
-			<th>First List Time</th>
-			<th>Last List Time</th>
-			<th colspan="1"></th>
-		</thead>
-		<tbody>
-			<% @snacks.each do |snack| %>
-			<tr>
-				<td><%= snack.name%></td>
-				<td><%= snack.description%></td>
-				<td><%= snack.total_quantity_purchased || "&mdash;".html_safe%></td>
-				<td><%= snack.average_price || "&mdash;".html_safe%> CO2C</td>
-				<td><%= snack.firstlisttime || "&mdash;".html_safe%></td>
-				<td><%= snack.lastlisttime || "&mdash;".html_safe%></td>
-				<td><%= link_to 'Edit', edit_marketplace_admin_snack_path(snack) %> | <%= link_to 'Delete', marketplace_admin_snack_path(snack), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-			</tr>
-			<% end %>
-		</tbody>
-	</table>
-	<%= link_to 'Add Snack', new_marketplace_admin_snack_path, class: "btn" %> | <%= link_to 'Back to Admin', marketplace_admin_path, class: "btn" %>
+  <table class="table table-bordered table-hover"> 
+    <thead>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Quantity Purchased</th>
+      <th>Average Sale Price</th>
+      <th>First List Time</th>
+      <th>Last List Time</th>
+      <th colspan="1"></th>
+    </thead>
+    <tbody>
+      <% @snacks.each do |snack| %>
+      <tr>
+        <td><%= snack.name%></td>
+        <td><%= snack.description%></td>
+        <td><%= snack.total_quantity_purchased || "&mdash;".html_safe%></td>
+        <td><%= snack.average_price || "&mdash;".html_safe%> CO2C</td>
+        <td><%= snack.firstlisttime || "&mdash;".html_safe%></td>
+        <td><%= snack.lastlisttime || "&mdash;".html_safe%></td>
+        <td><%= link_to 'Edit', edit_marketplace_admin_snack_path(snack) %> | <%= link_to 'Delete', marketplace_admin_snack_path(snack), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'Add Snack', new_marketplace_admin_snack_path, class: "btn" %> | <%= link_to 'Back to Admin', marketplace_admin_path, class: "btn" %>
 </div>

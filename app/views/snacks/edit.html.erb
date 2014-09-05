@@ -1,29 +1,29 @@
 <div class="container container-top">
-	<%= form_for :snack, url: marketplace_admin_snack_path(@snack), method: :patch do |f| %>
-		<% if @snack.errors.any? %>
-		<div id="error-explanation">
-			<h2><%= pluralize(@snack.errors.count, "error") %> prohibited this snack from being saved:</h2>
-			<ul>
-			<% @snack.errors.full_messages.each do |msg| %>
-				<li><%= msg %></li>
-			<%end%>
-			</ul>
-			<br>
-		</div>
-		<% end %>
-		<p>
-			<%= f.label :name %><br>
-			<%= f.text_field :name %>
-		</p>
+  <%= form_for :snack, url: marketplace_admin_snack_path(@snack), method: :patch do |f| %>
+    <% if @snack.errors.any? %>
+    <div id="error-explanation">
+      <h2><%= pluralize(@snack.errors.count, "error") %> prohibited this snack from being saved:</h2>
+      <ul>
+      <% @snack.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <%end%>
+      </ul>
+      <br>
+    </div>
+    <% end %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
 
-		<p>
-			<%= f.label :description %><br>
-			<%= f.text_area :description %>
-		</p>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
 
-		<p>
-			<%= f.submit :class => "btn btn-primary" %>
-		</p>
-	<% end %>
-	<%= link_to 'Back', marketplace_admin_snacks_path, class: "btn" %>
+    <p>
+      <%= f.submit :class => "btn btn-primary" %>
+    </p>
+  <% end %>
+  <%= link_to 'Back', marketplace_admin_snacks_path, class: "btn" %>
 </div>

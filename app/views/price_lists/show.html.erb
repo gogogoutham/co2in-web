@@ -1,21 +1,21 @@
 <div class="container container-top">
-	<table class="table table-bordered table-hover"> 
-		<thead>
-			<th>Snack Name</th>
-			<th>Price</th>
-			<th>Deposit Address</th>
-			<th>Quantity Purchased</th>
-		</thead>
-		<tbody>
-			<% @price_list.snack_quotes.alphabetical_with_balance.each do |sq| %>
-			<tr>
-				<td><%= sq.snack.name %></td>
-				<td><%= sq.price %> CO2C</td>
-				<td><%= sq.deposit_address %></td>
-				<td><%= sq.quantity_purchased || "&mdash;".html_safe%></td>
-			</tr>
-			<% end %>
-		</tbody>
-	</table>
-	<%= link_to 'Back to Price Lists', marketplace_admin_price_lists_path, class: "btn" %> | <%= link_to 'Edit', edit_marketplace_admin_price_list_path(@price_list), class: "btn" %>
+  <table class="table table-bordered table-hover"> 
+    <thead>
+      <th>Snack Name</th>
+      <th>Price</th>
+      <th>Deposit Address</th>
+      <th>Quantity Purchased</th>
+    </thead>
+    <tbody>
+      <% @price_list.snack_quotes.alphabetical_with_balance.each do |sq| %>
+      <tr>
+        <td><%= sq.snack.name %></td>
+        <td><%= sq.price %> CO2C</td>
+        <td><%= sq.deposit_address %></td>
+        <td><%= sq.quantity_purchased || "&mdash;".html_safe%></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'Back to Price Lists', marketplace_admin_price_lists_path, class: "btn" %> | <%= link_to 'Edit', edit_marketplace_admin_price_list_path(@price_list), class: "btn" %>
 </div>

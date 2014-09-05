@@ -1,37 +1,14 @@
-== README
+co2in-web
+===================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby-on-rails website for the [CO2IN currency](https://github.com/gogogoutham/co2in.git) and an associated online marketplace that allows for listing snacks available for sale, creating / updating prices, and accounting of inventory depletion.
 
-Things you may want to cover:
+This software along with the CO2IN client was used to conduct an informal experiment exploring the dynamics of a new cryptocurrency among members of the Rice Cultural Observatory and the Baylor College of Medicine's Center for Genome Architecture. 
 
-* Ruby version
+CO2IN IS NOT AN ACTIVE CRYTPOCURRENCY AND IS NOT INTENDED TO BE USED AS SUCH. USE AT YOUR OWN RISK!
 
-* System dependencies
 
-* Configuration
+Installation
+=============
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-* REQUIREMENTS FOR DEPLOYMENT
-
-* Follow this for RVM based deployment https://gorails.com/deploy/ubuntu/14.04
-* Need to install nginx from phusion passenger repo (not stock ubuntu repo)
-* Need javascript backend (sudo apt-get install nodejs, works)
-* To avoid capistrano deployment:
-** Set rails env to production; adding "export RAILS_ENV=production" to .bashrc on deployment user works
-** Need to fill-in settings.yml and secrets.yml file. Latter benefits from running "rake secret"
-** Need to run db migration /creation; "rake db:create" should work
-** Should precompile assets for speed "rake assets:precompile"
-* Example IP restricted nginx conf file for rails app: http://stackoverflow.com/questions/8438867/how-can-i-allow-access-to-a-single-ip-address-via-nginx-conf
-
+Runs on Ruby 2.1.2. More detailed instructions to follow.
